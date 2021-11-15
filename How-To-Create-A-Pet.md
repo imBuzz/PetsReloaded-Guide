@@ -1,13 +1,14 @@
+# Creation of new Pets for PetsReloaded
 
-Hi! In this document you can see how to create a custom pet.
+**Hi everyone!**
+In this document you can see how to create a custom pet.
 In order to do that you need to see how this file is made. 
-For first, create a file.yml and call it how you want your pet to be called for the plugin; for example MonkeyPet.yml
+For first, **create a file.yml** and *call it how you want your pet to be called for the plugin*, for example **MonkeyPet.yml** and put it in the folder called "pets" on the plugin folder.
 
-**The first section is the "information" section; in which you can define every aestetic part of the pet.**
-
-``java
+```
+#The first part is the "information" section; in which you can define every aestetic part of the pet.
 information:
-  #The Pet name displayed on messages.
+  #The Pet name used by the placeholder %pet% on messages.
   petName: "&aMonkey"
   #The Pet name displayed above the spawned pet.
   displayName: "&aMonkey of %player%"
@@ -16,7 +17,8 @@ information:
     The item used as the symbol of the unlocked pet on the GUIs
     unlocked_symbol:
       material: "PLAYER_HEAD"
-      skull: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjFlOTkzMzdkZGMyYzhkMTRjZjlmNTI3ZTk3MjI4NTEzMzU1OGM5NTM3NjVkZTRkZDVkN2E5MTlhOTg4ODIifX19"
+      #In order to set a skull, you can see another guide in this repository
+      skull: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjFlOTkzMzdkZGMyYzhkMTRjZjlmNTI3ZTk3MjI4NTEzMzU1OGM5NTM3NjVkZTRkZDVkN2E5MTlhOTg4ODIifX1"
       name: "&aMonkey"
       lore:
         - ""
@@ -47,13 +49,13 @@ items:
     material: "LEATHER_CHESTPLATE"
     
 #the structure part is the most important part, because on here you have to define if your pet is made by only a basic entity, 
-called "entity" and if it's visible and also you can define other part such as armorstands; if your pet is made by of only armorstands you can delete the "entity" 
+called "entity" and if is it visible, you can also define other part of the pet such as armorstands; if your pet is made by only armorstands you can delete the "entity" 
 and "visibile" entries. 
 structure:
   entity: PIG
   visible: true
   stands:
-    #Just a reference name to this armorstand, please do not use the same name for more that a reference.
+    #Just a reference name to this armorstand, please do not use the same name for more that a reference, because the plugin will not count the other ones.
     base:
       #On here you have to define what items does the armorstand have to have in: helmet, chestplate, legs, foot
       helmet: head
@@ -114,4 +116,7 @@ structure:
         rightArmPos: "270:90:0"
         leftLegsPos: "0:0:0"
         rightLegsPos: "0:0:0"
-``        
+``` 
+
+**For a better understanding of the pets creation, you should see every configuration of the default pets.*
+
