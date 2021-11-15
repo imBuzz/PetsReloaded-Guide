@@ -5,6 +5,7 @@ For first, create a file.yml and call it how you want your pet to be called for 
 
 **The first section is the "information" section; in which you can define every aestetic part of the pet.**
 
+``java
 information:
   #The Pet name displayed on messages.
   petName: "&aMonkey"
@@ -113,3 +114,4 @@ structure:
         rightArmPos: "270:90:0"
         leftLegsPos: "0:0:0"
         rightLegsPos: "0:0:0"
+``        
