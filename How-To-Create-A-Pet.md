@@ -10,8 +10,6 @@ For first, **create a file.yml** and *call it how you want your pet to be called
 information:
   #The Pet name used by the placeholder %pet% on messages.
   petName: "&aMonkey"
-  #The Pet name displayed above the spawned pet.
-  displayName: "&aMonkey of %player%"
   #The list of items used as symbols on GUIs
   symbols:
     The item used as the symbol of the unlocked pet on the GUIs
@@ -66,7 +64,9 @@ structure:
         xOffset: 0.0
         zOffset: 0.0
         yOffset: -0.7
-      #On here you have to define every position for every part of the stand; you can remove the part that you don't need  
+      #On here you have to define every position for every part of the stand; you can remove the part that you don't need
+      #every part of the "0:0:0" refers to X:Y:Z of the EulerAngle
+      #Use website such as: https://haselkern.com/Minecraft-ArmorStand/ or https://mrgarretto.com/armorstand/ for a better way to create pets
       positions:
         headPos: "0:0:0"
         bodyPos: "55:0:0"
